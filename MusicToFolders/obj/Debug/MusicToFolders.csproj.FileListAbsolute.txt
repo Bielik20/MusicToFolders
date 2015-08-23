@@ -1,0 +1,17 @@
+C:\Users\Bielik\git\MusicToFolders\MusicToFolders\bin\Debug\MusicToFolders.exe.config
+C:\Users\Bielik\git\MusicToFolders\MusicToFolders\bin\Debug\MusicToFolders.exe
+C:\Users\Bielik\git\MusicToFolders\MusicToFolders\bin\Debug\MusicToFolders.pdb
+C:\Users\Bielik\git\MusicToFolders\MusicToFolders\bin\Debug\Id3Lib.dll
+C:\Users\Bielik\git\MusicToFolders\MusicToFolders\bin\Debug\Mp3Lib.dll
+C:\Users\Bielik\git\MusicToFolders\MusicToFolders\bin\Debug\SharpZipLib.dll
+C:\Users\Bielik\git\MusicToFolders\MusicToFolders\obj\Debug\MusicToFolders.csprojResolveAssemblyReference.cache
+C:\Users\Bielik\git\MusicToFolders\MusicToFolders\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Bielik\git\MusicToFolders\MusicToFolders\obj\Debug\Views\App.g.cs
+C:\Users\Bielik\git\MusicToFolders\MusicToFolders\obj\Debug\MusicToFolders_MarkupCompile.cache
+C:\Users\Bielik\git\MusicToFolders\MusicToFolders\obj\Debug\MusicToFolders_MarkupCompile.lref
+C:\Users\Bielik\git\MusicToFolders\MusicToFolders\obj\Debug\Views\MainWindow.baml
+C:\Users\Bielik\git\MusicToFolders\MusicToFolders\obj\Debug\MusicToFolders.g.resources
+C:\Users\Bielik\git\MusicToFolders\MusicToFolders\obj\Debug\MusicToFolders.Properties.Resources.resources
+C:\Users\Bielik\git\MusicToFolders\MusicToFolders\obj\Debug\MusicToFolders.csproj.GenerateResource.Cache
+C:\Users\Bielik\git\MusicToFolders\MusicToFolders\obj\Debug\MusicToFolders.exe
+C:\Users\Bielik\git\MusicToFolders\MusicToFolders\obj\Debug\MusicToFolders.pdb

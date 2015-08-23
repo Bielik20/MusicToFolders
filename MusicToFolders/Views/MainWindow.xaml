@@ -1,0 +1,31 @@
+﻿<Window x:Class="MusicToFolders.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicToFolders.Views"
+        mc:Ignorable="d"
+        Title="Music To Folders - by Damian Bielecki" Height="450" Width="780">
+    <StackPanel>
+        <DockPanel Margin="10">
+            <Label Content="{Binding FolderPath}" />
+            <Button Content="Choose Folder" HorizontalAlignment="Right" Command="{Binding ChooseFolderCommand}"/>
+        </DockPanel>
+        <Grid Margin="10" MaxHeight="300">
+            <ListView ItemsSource="{Binding MusicList}" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="File Name" DisplayMemberBinding="{Binding FileName}" Width="250"/>
+                        <GridViewColumn Header="Artist" DisplayMemberBinding="{Binding TagHandler.Artist}" Width="150"/>
+                        <GridViewColumn Header="Album" DisplayMemberBinding="{Binding TagHandler.Album}" Width="150"/>
+                        <GridViewColumn Header="Title" DisplayMemberBinding="{Binding TagHandler.Title}" Width="200"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+        <DockPanel Margin="10">
+            <Button Content="   Do it!   " HorizontalAlignment="Right" Command="{Binding DoItCommand}"/>
+            <ProgressBar Minimum="0" Maximum="{Binding NumOfFiles, UpdateSourceTrigger=PropertyChanged}" Value="{Binding CurrFile, UpdateSourceTrigger=PropertyChanged}"/>
+        </DockPanel>
+    </StackPanel>
+</Window>

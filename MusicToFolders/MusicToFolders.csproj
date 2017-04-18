@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GridViewSort">
+      <HintPath>..\..\_Libraries\GridViewSort.dll</HintPath>
+    </Reference>
     <Reference Include="Id3Lib, Version=0.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Libraries\Id3Lib.dll</HintPath>

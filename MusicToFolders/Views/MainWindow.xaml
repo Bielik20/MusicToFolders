@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MusicToFolders.Views"
+        xmlns:util="clr-namespace:GridViewSort;assembly=GridViewSort"
         mc:Ignorable="d"
         Title="Music To Folders - by Damian Bielecki" Height="450" Width="780">
     <StackPanel>
@@ -12,13 +13,28 @@
             <Button Content="Choose Folder" HorizontalAlignment="Right" Command="{Binding ChooseFolderCommand}"/>
         </DockPanel>
         <Grid Margin="10" MaxHeight="300">
-            <ListView ItemsSource="{Binding MusicList}" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListView ItemsSource="{Binding MusicList}"
+                      ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                      IsSynchronizedWithCurrentItem="True"
+                      util:GridViewSort.AutoSort="True">
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Header="File Name" DisplayMemberBinding="{Binding FileName}" Width="250"/>
-                        <GridViewColumn Header="Artist" DisplayMemberBinding="{Binding TagHandler.Artist}" Width="150"/>
-                        <GridViewColumn Header="Album" DisplayMemberBinding="{Binding TagHandler.Album}" Width="150"/>
-                        <GridViewColumn Header="Title" DisplayMemberBinding="{Binding TagHandler.Title}" Width="200"/>
+                        <GridViewColumn Header="File Name"
+                                        DisplayMemberBinding="{Binding FileName}"
+                                        util:GridViewSort.PropertyName="FileName"
+                                        Width="250"/>
+                        <GridViewColumn Header="Artist"
+                                        DisplayMemberBinding="{Binding TagHandler.Artist}"
+                                        util:GridViewSort.PropertyName="TagHandler.Artist"
+                                        Width="150"/>
+                        <GridViewColumn Header="Album"
+                                        DisplayMemberBinding="{Binding TagHandler.Album}"
+                                        util:GridViewSort.PropertyName="TagHandler.Album"
+                                        Width="150"/>
+                        <GridViewColumn Header="Title"
+                                        DisplayMemberBinding="{Binding TagHandler.Title}"
+                                        util:GridViewSort.PropertyName="TagHandler.Title"
+                                        Width="200"/>
                     </GridView>
                 </ListView.View>
             </ListView>
